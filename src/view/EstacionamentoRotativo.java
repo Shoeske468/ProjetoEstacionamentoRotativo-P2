@@ -211,6 +211,12 @@ public class EstacionamentoRotativo {
                  IllegalArgumentException e) {
 
             adicionarLog("ERRO: " + e.getMessage());
+            JOptionPane.showMessageDialog(
+                    campoPlaca,
+                    e.getMessage(),
+                    "Erro ao registrar entrada",
+                    JOptionPane.ERROR_MESSAGE
+            );
         }
     }
 
